@@ -14,7 +14,16 @@ class MyApp extends StatelessWidget {
       child: Icon(Icons.camera),
     ),
       drawer: Drawer(
-        child: FlutterLogo(),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            FlutterLogo(
+              size: 50.0,
+            ),
+            FlutterLogo(),
+            FlutterLogo()
+          ],
+        ),
       ),
       appBar: AppBar(
         actions: <Widget>[
