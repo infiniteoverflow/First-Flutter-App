@@ -18,10 +18,20 @@ class MyApp extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             FlutterLogo(
-              size: 50.0,
+              size: 90.0,
             ),
-            FlutterLogo(),
-            FlutterLogo()
+            SizedBox(
+              height: 30.0,
+            ),
+            FlutterLogo(
+              size: 90.0,
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            FlutterLogo(
+              size: 90.0,
+            )
           ],
         ),
       ),
