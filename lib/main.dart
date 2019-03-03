@@ -15,7 +15,13 @@ class MyApp extends StatelessWidget {
     ),
       appBar: AppBar(
         actions: <Widget>[
-          Icon(Icons.search)
+          IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.satellite),
+          )
         ],
         title: Text("My First Flutter App"),
         centerTitle: true,
