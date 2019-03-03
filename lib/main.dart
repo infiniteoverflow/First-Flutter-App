@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
       child: Icon(Icons.camera),
     ),
       appBar: AppBar(
+        actions: <Widget>[
+          Icon(Icons.search)
+        ],
         title: Text("My First Flutter App"),
         centerTitle: true,
       ),
