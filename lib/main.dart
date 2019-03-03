@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
     return Scaffold(floatingActionButton: FloatingActionButton(
       child: Icon(Icons.camera),
     ),
+      drawer: Drawer(
+        child: FlutterLogo(),
+      ),
       appBar: AppBar(
         actions: <Widget>[
           IconButton(
