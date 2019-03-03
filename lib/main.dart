@@ -43,18 +43,31 @@ class MyApp extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(Icons.satellite),
+            onPressed: () {},
           )
         ],
         title: Text("My First Flutter App"),
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          "Hello World\n\nWelcome to Flutter",
-          style: TextStyle(fontSize: 20.0,
-          fontStyle: FontStyle.italic,
-          color: Colors.red),
-        ),
+        child: Container(
+          child: ListView.builder(
+
+              itemCount: 30,
+              itemBuilder:(context,index) {
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    "Item $index",
+                        style: TextStyle(fontSize: 20.0),
+                  ),
+                );
+              }),
+        )
       ),
     );
   }
